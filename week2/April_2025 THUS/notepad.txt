@@ -1,0 +1,9 @@
+ 
+    github
+ ===========
+
+  to install bootstrap
+ =====================
+npm i boostrap@
+ 
+link : github/Ganza

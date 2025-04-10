@@ -1,0 +1,68 @@
+         
+  database:webapp
+
+  table users
+===============
+CREATE TABLE users(
+    Userid int PRIMARY KEY AUTO_INCREMENT,
+    FirstName VARCHAR (255) NOT NULL,
+    LaststName VARCHAR (255) NOT NULL,
+    Gender ENUM('Male','Female','Other'),
+    Age INT  ,
+    Address TEXT,
+    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    UpdateAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    
+
+    );
+
+      
+     FOREIGN KEY
+     ===========
+ CREATE TABLE products(
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(255) NOT NULL,
+
+      TASK
+     =====
+      
+Client Table:
+ClientId,Names,Phone,Email,Address,Tin,UserId,Date
+    product_code VARCHAR(255) NOT NULL,
+    Quantity INT NOT NULL,
+    Brand VARCHAR(100) NOT NULL,
+    model VARCHAR(100) NOT NULL,
+    UserId INT,
+    Dates VARCHAR(100) NOT NULL,
+    UpdateAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY(UserId) REFERENCES users(UserId)
+    );
+
+    TYPES OF JOIN
+  =================
+    1.INNER JOIN
+    2.RIGHT JOIN
+    3.LEFT JOIN
+ 
+     Research
+    =========
+
+   wappolyz:Extension
+
+   site: used to get all data from one websit
+   Botpress: used to create AI
+   
+
+  PWrVVpaWX4 :psw
+
+  mysqli_real_escape_string : prevent external attacks like hackers
+
+  
+    tyes of javascript alert
+=============================
+ 1. confirm
+ 2. prompt
+ 3. alert
+fakefiller:is anextension used to summarise our msgs when saved to fill in inputs
+
+ overflow-x:auto;=>used to specifying responsiveness

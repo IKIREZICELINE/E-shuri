@@ -1,0 +1,56 @@
+
+ command used to create collection
+===================================
+
+  
+    category
+==============
+db.category.insertOne({
+    _id: ObjectId(),  // MongoDB automatically generates a unique ObjectId
+    category_name: "Electronics",
+    description: "Electronic gadgets and devices",
+    created_at: new Date()
+});
+
+
+     user
+=============
+
+db.user.insertOne({
+    _id: ObjectId(),
+    first_name: "John",
+    last_name: "Doe",
+    email: "johndoe@example.com",
+    phone: "+1234567890",
+    created_at: new Date()
+});
+
+      product
+=================
+db.products.insertOne({
+    product_code: 1001,
+    category_id: ObjectId("603d2f34e3b6a72b5c8f2b9a"), // Reference to category
+    product_name: "Smartphone",
+    brand: "Samsung",
+    model: "Galaxy S23",
+    user_id: ObjectId("603d2f34e3b6a72b5c8f2b9b"), // Reference to user
+    date: ISODate("2024-04-01T00:00:00Z"),
+    created_at: new Date()
+});
+
+
+  db.category.find()=>list all date
+
+
+  to create Refereral
+=========================
+db.products.insertOne({productRefereral"603d2f34e3b6a72b5c8f2b9a",
+    product_code: 1001,
+    product_name: "Smartphone",
+    brand: "Samsung",
+    model: "Galaxy S23",
+    date: ISODate("2024-04-01T00:00:00Z"),
+    created_at: new Date()
+});
+ 
+

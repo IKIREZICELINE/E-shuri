@@ -1,0 +1,20 @@
+
+create database and stock table use mongo DB
+===============================================
+
+-STOCK
+
+(product,category,user)
+
+
+products(product_code,category_id,product_name,brand,model,user_id,date,create_at)
+
+user(user_id,first_name,last_name,email,phone,created_at)
+
+category(category_id,category_name,description,created_at)
+
+
+
+
+
+https://www.namecheap.com

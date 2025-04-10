@@ -1,0 +1,11 @@
+
+  TO DAY
+ =========
+  
+installation of:
+
+ 1.flutter 
+ 2.Android
+  
+
+   

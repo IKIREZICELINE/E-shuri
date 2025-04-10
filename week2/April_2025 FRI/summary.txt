@@ -1,0 +1,33 @@
+  
+   to day
+===========
+ 
+ .Reactcommunity
+===============
+ .installation
+=============
+npm i bootstrap@
+npm i react-router-dom
+
+ .backend
+=======
+ installation of libraries
+=========================
+
+npm install express cors
+
+express:used to start server
+cors:used to connect backend and frontend
+
+
+ .link
+========
+bootstrap.com :where u can copy bootsrap code
+bootstrap url:for getting
+
+ .installation of font awesome
+===============================
+<i class="fa-solid fa-house"></i>
+<FontAwesomeIcon icon icon={}></FontAwesome>
+  
+

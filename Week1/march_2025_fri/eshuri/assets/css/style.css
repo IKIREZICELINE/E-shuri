@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #0d0d50;
+    --gradient-color: #0d0d50;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #7F00FF, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.table-container {
+    background: white;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+}
+
+thead {
+    background: #2e2e2e;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px 16px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn.update {
+    background-color: #4CAF50;
+}
+
+.btn.delete {
+    background-color: #f44336;
+}
+
+.actionBtns a {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.actionBtns a:nth-child(2) {
+    background-color: #ff0000;
+}
+
+@media (max-width: 768px) {
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
